@@ -1,0 +1,76 @@
+goos: linux
+goarch: amd64
+pkg: github.com/BedIsTooFarAway/effective-go
+cpu: Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz
+BenchmarkURLString-16    	11831796	        92.69 ns/op	      56 B/op	       3 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:23: Loop 1 times
+    url_test.go:23: Loop 100 times
+    url_test.go:23: Loop 10000 times
+    url_test.go:23: Loop 1000000 times
+    url_test.go:23: Loop 11831796 times
+BenchmarkURLString-16    	12700624	        96.72 ns/op	      56 B/op	       3 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:23: Loop 1 times
+    url_test.go:23: Loop 100 times
+    url_test.go:23: Loop 10000 times
+    url_test.go:23: Loop 1000000 times
+    url_test.go:23: Loop 12700624 times
+BenchmarkURLString-16    	12351913	        90.90 ns/op	      56 B/op	       3 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:23: Loop 1 times
+    url_test.go:23: Loop 100 times
+    url_test.go:23: Loop 10000 times
+    url_test.go:23: Loop 1000000 times
+    url_test.go:23: Loop 12351913 times
+BenchmarkURLString-16    	13872619	        88.67 ns/op	      56 B/op	       3 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:23: Loop 1 times
+    url_test.go:23: Loop 100 times
+    url_test.go:23: Loop 10000 times
+    url_test.go:23: Loop 1000000 times
+    url_test.go:23: Loop 13872619 times
+BenchmarkURLString-16    	13505707	        90.74 ns/op	      56 B/op	       3 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:23: Loop 1 times
+    url_test.go:23: Loop 100 times
+    url_test.go:23: Loop 10000 times
+    url_test.go:23: Loop 1000000 times
+    url_test.go:23: Loop 13505707 times
+BenchmarkURLString-16    	13365913	        88.55 ns/op	      56 B/op	       3 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:23: Loop 1 times
+    url_test.go:23: Loop 100 times
+    url_test.go:23: Loop 10000 times
+    url_test.go:23: Loop 1000000 times
+    url_test.go:23: Loop 13365913 times
+BenchmarkURLString-16    	12711458	        89.94 ns/op	      56 B/op	       3 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:23: Loop 1 times
+    url_test.go:23: Loop 100 times
+    url_test.go:23: Loop 10000 times
+    url_test.go:23: Loop 1000000 times
+    url_test.go:23: Loop 12711458 times
+BenchmarkURLString-16    	12374053	        90.90 ns/op	      56 B/op	       3 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:23: Loop 1 times
+    url_test.go:23: Loop 100 times
+    url_test.go:23: Loop 10000 times
+    url_test.go:23: Loop 1000000 times
+    url_test.go:23: Loop 12374053 times
+BenchmarkURLString-16    	12020721	        92.25 ns/op	      56 B/op	       3 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:23: Loop 1 times
+    url_test.go:23: Loop 100 times
+    url_test.go:23: Loop 10000 times
+    url_test.go:23: Loop 1000000 times
+    url_test.go:23: Loop 12020721 times
+BenchmarkURLString-16    	13470630	        89.55 ns/op	      56 B/op	       3 allocs/op
+--- BENCH: BenchmarkURLString-16
+    url_test.go:23: Loop 1 times
+    url_test.go:23: Loop 100 times
+    url_test.go:23: Loop 10000 times
+    url_test.go:23: Loop 1000000 times
+    url_test.go:23: Loop 13470630 times
+PASS
+ok  	github.com/BedIsTooFarAway/effective-go	12.653s
