@@ -1,2 +1,4 @@
+github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
+github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
 github.com/inancgumus/effective-go/ch04 v0.0.0-20230508205900-8fe6d16e8f37 h1:hCHiu4aV06duDqOuetjCAmnc/qFDZ2RkyHEvqbfqJww=
 github.com/inancgumus/effective-go/ch04 v0.0.0-20230508205900-8fe6d16e8f37/go.mod h1:4CsIpLitp46mbHMGq3oxPxODHyFFxr9rDbPDvFVjz1Y=

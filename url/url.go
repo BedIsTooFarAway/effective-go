@@ -11,7 +11,7 @@ func Parse(rawurl string) (*URL, error) {
 
 	i := strings.Index(rawurl, "://")
 
-	if i < 0 {
+	if i < 1 {
 		return nil, errors.New("missing scheme")
 	}
 	scheme, rest := rawurl[:i], rawurl[i+3:]
@@ -25,8 +25,42 @@ func Parse(rawurl string) (*URL, error) {
 	// return errors.New("malformed url")
 }
 
+func parseScheme(rawurl string) (scheme, rest string, ok bool) {
+	return split(rawurl, "://", 1)
+}
+
+func split(s, sep string, n int) (a, b string, ok bool) {
+	i := strings.Index(s, sep)
+	if i < n {
+		return "", "", false
+	}
+	return s[:i], s[i+len(sep):], true
+}
 func (u *URL) String() string {
-	return fmt.Sprintf("%s://%s/%s", u.Scheme, u.Host, u.Path)
+	if u == nil {
+		return ""
+	}
+	var s strings.Builder
+	if sc := u.Scheme; sc != "" {
+		s.WriteString(sc)
+		s.WriteString("://")
+	}
+	if h := u.Host; h != "" {
+		s.WriteString(h)
+	}
+	if p := u.Path; p != "" {
+		s.WriteString("/")
+		s.WriteString(p)
+	}
+	return s.String()
+}
+
+func (u *URL) testString() string {
+	if u == nil {
+		return ""
+	}
+
+	return fmt.Sprintf("scheme=%q, host=%q, path=%q", u.Scheme, u.Host, u.Path)
 }
 
 func (u *URL) HostName() string {
